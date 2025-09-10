@@ -43,8 +43,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full border-b px-4 md:px-6 fixed to-0% ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
+      className={`w-full  px-4 md:px-6 py-2 fixed to-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white shadow-md text-black border-b-[1px]  border-transparent"
+          : "bg-transparent text-white border-b-[1px] border-gray-400 "
       }`}
     >
       <div className="max-w-[1170px] mx-auto flex h-16 items-center justify-between gap-4">
@@ -107,7 +109,7 @@ export default function Navbar() {
           </Popover>
           {/* Logo */}
           <div className="flex items-center">
-            <Link to={"/"} className="text-primary hover:text-primary/90">
+            <Link to={"/"} className="">
               <div className="flex gap-2 items-center justify-center">
                 <HouseIcon
                   size={36}
@@ -127,7 +129,11 @@ export default function Navbar() {
                   <NavigationMenuLink
                     active={link.active}
                     href={link.href}
-                    className=" flex-row items-center gap-2 py-1.5 font-medium"
+                    className={`flex-row items-center gap-2 py-1.5 font-medium transition duration-300 ${
+                      scrolled
+                        ? "hover:border-gray-800 data-[active]:focus:border-b-2 data-[active]:hover:border-b-2 data-[active]:border-black "
+                        : "hover:border-white data-[active]:focus:border-b-2 data-[active]:hover:border-b-2 data-[active]:border-white "
+                    }`}
                   >
                     <span>{link.label}</span>
                     <span className="text-2xl "> - </span>
@@ -146,7 +152,13 @@ export default function Navbar() {
             <CircleUser />
             <span>Login/Register</span>
           </Link>
-          <Button className="flex gap-3 justify-center items-center font-medium">
+          <Button
+            className={`flex gap-3 justify-center items-center font-medium duration-300 cursor-pointer ${
+              scrolled
+                ? "bg-[#EB6753] shadow-md text-white "
+                : "bg-white text-black hover:text-white"
+            }`}
+          >
             <span>Add Property</span>
             <ArrowUpRight />
           </Button>
