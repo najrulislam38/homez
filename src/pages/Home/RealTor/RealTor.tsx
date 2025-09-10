@@ -15,9 +15,9 @@ export default function RealTor() {
               <SectionDescription desc="Aliquam lacinia diam quis lacus euismod" />
             </div>
           </div>
-          <div className=" grid gap-5 grid-cols-1 md:grid-cols-3">
+          <div className=" grid gap-5 grid-cols-1 md:grid-cols-3 ">
             {/* card 1 */}
-            <div className="bg-white p-9 rounded-xl">
+            <div className="bg-white p-9 rounded-xl hover:shadow-[0px_10px_40px_0px_#181a2014] transition duration-300">
               <div className="flex items-center justify-center p-8">
                 <svg
                   viewBox="0 0 90 90"
@@ -212,14 +212,14 @@ export default function RealTor() {
                 ultricies auctor.
               </p>
 
-              <Button className=" w-fit mx-auto mt-7 px-7 py-5 flex gap-1 items-center bg-transparent text-foreground  border  hover:bg-primary hover:text-white transition-all duration-300">
+              <Button className=" w-fit mx-auto mt-7 px-7 py-5 flex gap-1 items-center bg-transparent text-foreground  border  hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
                 <span>Find A Home</span>
                 <ArrowUpRight />
               </Button>
             </div>
 
             {/* card 2 */}
-            <div className="bg-white p-9 rounded-xl">
+            <div className="bg-white p-9 rounded-xl hover:shadow-[0px_10px_40px_0px_#181a2014] transition duration-300">
               <div className="flex items-center justify-center p-8">
                 <svg
                   viewBox="0 0 90 90"
@@ -408,14 +408,14 @@ export default function RealTor() {
                 ultricies auctor.
               </p>
 
-              <Button className=" w-fit mx-auto mt-7 px-7 py-5 flex gap-1 items-center bg-transparent text-foreground  border  hover:bg-primary hover:text-white transition-all duration-300">
+              <Button className=" w-fit mx-auto mt-7 px-7 py-5 flex gap-1 items-center bg-transparent text-foreground  border  hover:bg-primary hover:text-white transition-all duration-300  cursor-pointer">
                 <span>Place an ad</span>
                 <ArrowUpRight />
               </Button>
             </div>
 
             {/* card 3 */}
-            <div className="bg-white p-9 rounded-xl">
+            <div className="bg-white p-9 rounded-xl hover:shadow-[0px_10px_40px_0px_#181a2014] transition duration-300">
               <div className="flex items-center justify-center p-8">
                 <svg
                   viewBox="0 0 90 90"
@@ -592,7 +592,7 @@ export default function RealTor() {
                 ultricies auctor.
               </p>
 
-              <Button className=" w-fit mx-auto mt-7 px-7 py-5 flex gap-1 items-center bg-transparent text-foreground  border  hover:bg-primary hover:text-white transition-all duration-300">
+              <Button className=" w-fit mx-auto mt-7 px-7 py-5 flex gap-1 items-center bg-transparent text-foreground  border  hover:bg-primary hover:text-white transition-all duration-300  cursor-pointer">
                 <span>Find a rental</span>
                 <ArrowUpRight />
               </Button>
