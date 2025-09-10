@@ -29,7 +29,6 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // যদি window scroll > 50px হয় তাহলে scrolled = true
       if (window.scrollY > 50) {
         setScrolled(true);
       } else {
@@ -56,7 +55,7 @@ export default function Navbar() {
           <Popover>
             <PopoverTrigger asChild>
               <Button
-                className="group size-8 md:hidden"
+                className="group size-8 lg:hidden"
                 variant="ghost"
                 size="icon"
               >
@@ -87,7 +86,7 @@ export default function Navbar() {
                 </svg>
               </Button>
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-36 p-1 md:hidden">
+            <PopoverContent align="start" className="w-36 p-1 lg:hidden">
               <NavigationMenu className="max-w-none *:w-full">
                 <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
                   {navigationLinks.map((link, index) => {
@@ -121,7 +120,7 @@ export default function Navbar() {
           </div>
         </div>
         {/* Middle area */}
-        <NavigationMenu className="max-md:hidden  ">
+        <NavigationMenu className="max-lg:hidden  ">
           <NavigationMenuList className="gap-5">
             {navigationLinks.map((link, index) => {
               return (
@@ -153,7 +152,7 @@ export default function Navbar() {
             <span>Login/Register</span>
           </Link>
           <Button
-            className={`flex gap-3 justify-center items-center font-medium duration-300 cursor-pointer ${
+            className={`hidden md:flex gap-3 justify-center  items-center font-medium duration-300 cursor-pointer ${
               scrolled
                 ? "bg-[#EB6753] shadow-md text-white "
                 : "bg-white text-black hover:text-white"
