@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Features() {
   return (
-    <div className="bg-[#F7F7F7] py-32 ">
+    <div className="bg-[#F7F7F7] py-10 md:py-20 lg:py-32 ">
       <Container>
         <div>
           <div className="flex items-end justify-between gap-4 mb-12">
