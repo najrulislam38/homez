@@ -51,7 +51,7 @@ export default function ApartmentTypes() {
               <div
                 key={idx}
                 className={`
-    relative h-64 rounded-lg overflow-hidden group shadow-md cursor-pointer
+    relative h-64 rounded-lg group overflow-hidden group shadow-md cursor-pointer
     ${idx === 0 ? "md:col-span-2" : ""} 
     ${idx === categories.length - 1 ? "md:col-span-2" : ""} 
   `}
@@ -59,7 +59,7 @@ export default function ApartmentTypes() {
                 <img
                   src={cat.image}
                   alt={cat.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-300"
                   loading="lazy"
                 />
 
