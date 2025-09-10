@@ -1,10 +1,4 @@
-import {
-  ArrowUpRight,
-  CircleUser,
-  HouseIcon,
-  InboxIcon,
-  ZapIcon,
-} from "lucide-react";
+import { ArrowUpRight, CircleUser, HouseIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -19,20 +13,43 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Link } from "react-router";
+import { useEffect, useState } from "react";
 
 // Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
-  { href: "#", label: "Home", icon: HouseIcon, active: true },
-  { href: "#", label: "Inbox", icon: InboxIcon },
-  { href: "#", label: "Insights", icon: ZapIcon },
+  { href: "/", label: "Home", active: true },
+  { href: "#", label: "Listing" },
+  { href: "#", label: "Members" },
+  { href: "#", label: "Blogs" },
+  { href: "#", label: "Pages" },
 ];
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // যদি window scroll > 50px হয় তাহলে scrolled = true
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="border-b px-4 md:px-6">
+    <header
+      className={`w-full border-b px-4 md:px-6 fixed to-0% ${
+        scrolled ? "bg-white shadow-md" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-[1170px] mx-auto flex h-16 items-center justify-between gap-4">
         {/* Left side */}
-        <div className="flex flex-1 items-center gap-2">
+        <div className="flex  items-center gap-2">
           {/* Mobile menu trigger */}
           <Popover>
             <PopoverTrigger asChild>
@@ -72,7 +89,6 @@ export default function Navbar() {
               <NavigationMenu className="max-w-none *:w-full">
                 <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
                   {navigationLinks.map((link, index) => {
-                    const Icon = link.icon;
                     return (
                       <NavigationMenuItem key={index} className="w-full">
                         <NavigationMenuLink
@@ -80,11 +96,6 @@ export default function Navbar() {
                           className="flex-row items-center gap-2 py-1.5"
                           active={link.active}
                         >
-                          <Icon
-                            size={16}
-                            className="text-muted-foreground/80"
-                            aria-hidden="true"
-                          />
                           <span>{link.label}</span>
                         </NavigationMenuLink>
                       </NavigationMenuItem>
@@ -108,7 +119,7 @@ export default function Navbar() {
           </div>
         </div>
         {/* Middle area */}
-        <NavigationMenu className="max-md:hidden">
+        <NavigationMenu className="max-md:hidden  ">
           <NavigationMenuList className="gap-5">
             {navigationLinks.map((link, index) => {
               return (
@@ -127,7 +138,7 @@ export default function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         {/* Right side */}
-        <div className="flex flex-1 items-center justify-end gap-5">
+        <div className="flex items-center justify-end gap-5">
           <Link
             to={"#"}
             className="flex gap-4 justify-center items-center font-medium bg-transparent"
