@@ -93,11 +93,11 @@ export default function Navbar() {
                     return (
                       <NavigationMenuItem key={index} className="w-full">
                         <NavigationMenuLink
-                          href={link.href}
+                          asChild
                           className="flex-row items-center gap-2 py-1.5"
                           active={link.active}
                         >
-                          <span>{link.label}</span>
+                          <Link to={link.href}>{link.label}</Link>
                         </NavigationMenuLink>
                       </NavigationMenuItem>
                     );
@@ -126,16 +126,19 @@ export default function Navbar() {
               return (
                 <NavigationMenuItem key={index}>
                   <NavigationMenuLink
+                    asChild
                     active={link.active}
-                    href={link.href}
                     className={`flex-row items-center gap-2 py-1.5 font-medium transition duration-300 ${
                       scrolled
                         ? "hover:border-gray-800 data-[active]:focus:border-b-2 data-[active]:hover:border-b-2 data-[active]:border-black "
                         : "hover:border-white data-[active]:focus:border-b-2 data-[active]:hover:border-b-2 data-[active]:border-white "
                     }`}
                   >
-                    <span>{link.label}</span>
-                    <span className="text-2xl "> - </span>
+                    <Link to={link?.href}>
+                      {" "}
+                      <span>{link.label}</span>
+                      <span className="text-2xl "> - </span>
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               );
