@@ -7,6 +7,7 @@ import HeroSection from "./Home/Hero/HeroSection";
 import OurBestDeals from "./Home/OurBestDeals/OurBestDeals";
 import PeopleLove from "./Home/PeopleLove/PeopleLove";
 import RealTor from "./Home/RealTor/RealTor";
+import TrustedSponsor from "./Home/TrustedSponsor/TrustedSponsor";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <PeopleLove />
       <OurBestDeals />
       <Blog />
+      <TrustedSponsor />
     </div>
   );
 }
