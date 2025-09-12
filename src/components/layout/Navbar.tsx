@@ -157,8 +157,8 @@ export default function Navbar() {
           <Button
             className={`hidden md:flex gap-3 justify-center  items-center font-medium duration-300 cursor-pointer ${
               scrolled
-                ? "bg-[#EB6753] shadow-md text-white "
-                : "bg-white text-black hover:text-white"
+                ? "bg-[#EB6753] shadow-md text-white hover:opacity-90 hover:transition duration-200 "
+                : "bg-white text-black hover:text-white  hover:transition duration-200"
             }`}
           >
             <span>Add Property</span>

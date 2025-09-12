@@ -3,26 +3,26 @@ import { Search, SlidersHorizontal } from "lucide-react";
 
 export default function SearchBar() {
   return (
-    <div className="w-[1170px] mx-auto absolute top-[90%] left-1/2 -translate-x-1/2 transform z-10">
+    <div className="w-[1170px] mx-auto absolute top-[90%] left-1/2 -translate-x-1/2 transform z-10 hidden xl:block">
       <Tabs defaultValue="tab-1" className="items-start">
         <TabsList className="">
           <TabsTrigger
             value="tab-1"
             className="  relative overflow-hidden border py-2  px-8 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 first:rounded-s last:rounded-e"
           >
-            For Rent
+            All
           </TabsTrigger>
           <TabsTrigger
             value="tab-2"
             className="data-[state=active]:bg-muted  relative overflow-hidden rounded-none border py-2 px-8 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 first:rounded-s last:rounded-e"
           >
-            Tab 2
+            For Sale
           </TabsTrigger>
           <TabsTrigger
             value="tab-3"
             className="data-[state=active]:bg-muted  relative overflow-hidden rounded-none border py-2 px-8 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-0.5 first:rounded-s last:rounded-e"
           >
-            Tab 3
+            For Rent
           </TabsTrigger>
         </TabsList>
         <div className="bg-white w-full rounded-tr-[12px] rounded-br-[12px] rounded-bl-[12px]">
@@ -79,13 +79,13 @@ export default function SearchBar() {
                   <input
                     type="number"
                     placeholder="$0"
-                    className="w-1/2  rounded px-2 py-2 text-sm"
+                    className="w-1/2  rounded px-2 py-2 text-sm focus:outline-none focus:ring focus:ring-primary"
                   />
                   -
                   <input
                     type="number"
                     placeholder="$5800"
-                    className="w-1/2 rounded px-2 py-2 text-sm"
+                    className="w-1/2 rounded px-2 py-2 text-sm focus:outline-none focus:ring focus:ring-primary"
                   />
                 </div>
               </div>
@@ -108,12 +108,12 @@ export default function SearchBar() {
           </TabsContent>
           <TabsContent value="tab-2">
             <p className="text-muted-foreground p-4 text-center text-xs">
-              Content for Tab 2
+              Content for Sales.....
             </p>
           </TabsContent>
           <TabsContent value="tab-3">
             <p className="text-muted-foreground p-4 text-center text-xs">
-              Content for Tab 3
+              Content for Rent.....
             </p>
           </TabsContent>
         </div>
