@@ -42,7 +42,11 @@ export default function ExploreApartmentTypes() {
           </div>
           <div className="">
             <Swiper
-              slidesPerView={5}
+              slidesPerView={1}
+              breakpoints={{
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 5 },
+              }}
               spaceBetween={30}
               freeMode={true}
               pagination={{

@@ -52,8 +52,8 @@ export default function ApartmentTypes() {
                 key={idx}
                 className={`
     relative h-64 rounded-lg group overflow-hidden group shadow-md cursor-pointer
-    ${idx === 0 ? "md:col-span-2" : ""} 
-    ${idx === categories.length - 1 ? "md:col-span-2" : ""} 
+    ${idx === 0 ? "lg:col-span-2" : ""} 
+    ${idx === categories.length - 1 ? "lg:col-span-2" : ""} 
   `}
               >
                 <img

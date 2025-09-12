@@ -40,7 +40,11 @@ export default function Features() {
           </div>
           <div className="">
             <Swiper
-              slidesPerView={3}
+              slidesPerView={1}
+              breakpoints={{
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
               spaceBetween={30}
               freeMode={true}
               pagination={{

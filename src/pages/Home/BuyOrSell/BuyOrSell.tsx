@@ -16,7 +16,7 @@ export default function BuyOrSell() {
         zIndex: -5,
       }}
     >
-      <div className="text-white h-full w-full flex justify-center items-center">
+      <div className="text-white h-full w-full flex justify-center items-center px-6 lg:px-10">
         <div>
           <span className="text-center block ">Buy Or Sell</span>
           <h2 className="max-w-[972px] mx-auto text-2xl md:text-4xl font-semibold leading-14 my-5">
@@ -24,13 +24,13 @@ export default function BuyOrSell() {
             provides an awesome solution!
           </h2>
 
-          <div className=" w-fit mx-auto flex gap-6 items-center justify-center ">
-            <Button className=" w-fit mx-auto mt-7 px-7 py-5 flex gap-1 items-center bg-primary text-white  border border-primary  hover:bg-white hover:text-primary hover:border-white transition-all duration-300 cursor-pointer">
+          <div className=" w-fit mt-7 mx-auto flex flex-wrap  gap-6 items-center justify-center ">
+            <Button className=" w-fit mx-auto px-7 py-5 flex gap-1 items-center bg-primary text-white  border border-primary  hover:bg-white hover:text-primary hover:border-white transition-all duration-300 cursor-pointer">
               <span>Submit Property</span>
               <ArrowUpRight />
             </Button>
 
-            <Button className=" w-fit mx-auto mt-7 px-7 py-5 flex gap-1 items-center bg-white text-foreground  border  hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 cursor-pointer">
+            <Button className=" w-fit mx-auto  px-7 py-5 flex gap-1 items-center bg-white text-foreground  border  hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 cursor-pointer">
               <span>Browse Properties</span>
               <ArrowUpRight />
             </Button>
