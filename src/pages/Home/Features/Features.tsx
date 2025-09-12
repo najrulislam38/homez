@@ -15,7 +15,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
-import { Button } from "@/components/ui/button";
+import FeatureCard from "./FeatureCard";
 
 export default function Features() {
   return (
@@ -54,170 +54,64 @@ export default function Features() {
               className="mySwiper !pb-20 [&_.swiper-pagination-bullet-active]:bg-black "
             >
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={featureImg1}
-                      className="h-56 w-full object-cover"
-                    />
-                    <Button className="absolute top-3 left-3 text-sm cursor-pointer ">
-                      Feature
-                    </Button>
-                  </div>
-
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">
-                      House on the Hollywood
-                    </h3>
-                    <div className="flex items-center justify-between">
-                      <p className="font-semibold text-primary">$4,800</p>
-                      <div className="flex gap-1.5 items-center">
-                        <span>__6</span>
-                        <span>__2</span>
-                        <span>__200</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                <FeatureCard
+                  featureImg={featureImg1}
+                  title={"House on the Hollywood"}
+                  rate={"4,800"}
+                  parking={6}
+                  bedrooms={2}
+                  area={200}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={featureImg2}
-                      className="h-56 w-full object-cover"
-                    />
-                    <Button className="absolute top-3 left-3 text-sm cursor-pointer">
-                      Feature
-                    </Button>
-                  </div>
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">
-                      Comfortable Villa Green
-                    </h3>
-                    <div className="flex items-center justify-between">
-                      <p className="font-semibold text-primary">$5,800</p>
-                      <div className="flex gap-1.5 items-center">
-                        <span>__9</span>
-                        <span>__3</span>
-                        <span>__600</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                <FeatureCard
+                  featureImg={featureImg2}
+                  title={"Comfortable Villa Green"}
+                  rate={"5,800"}
+                  parking={9}
+                  bedrooms={3}
+                  area={600}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={featureImg3}
-                      className="h-56 w-full object-cover"
-                    />
-                    <Button className="absolute top-3 left-3 text-sm cursor-pointer ">
-                      Feature
-                    </Button>
-                  </div>
-
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">
-                      Quality House For Sale
-                    </h3>
-                    <div className="flex items-center justify-between">
-                      <p className="font-semibold text-primary">$2,500</p>
-                      <div className="flex gap-1.5 items-center">
-                        <span>__10</span>
-                        <span>__2</span>
-                        <span>__500</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                <FeatureCard
+                  featureImg={featureImg3}
+                  title={"Quality House For Sale"}
+                  rate={"2,500"}
+                  parking={10}
+                  bedrooms={2}
+                  area={500}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={featureImg1}
-                      className="h-56 w-full object-cover"
-                    />
-                    <Button className="absolute top-3 left-3 text-sm cursor-pointer ">
-                      Feature
-                    </Button>
-                  </div>
-
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">
-                      House on the Hollywood
-                    </h3>
-                    <div className="flex items-center justify-between">
-                      <p className="font-semibold text-primary">$4,800</p>
-                      <div className="flex gap-1.5 items-center">
-                        <span>__6</span>
-                        <span>__2</span>
-                        <span>__200</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                <FeatureCard
+                  featureImg={featureImg1}
+                  title={"House on the Hollywood"}
+                  rate={"4,800"}
+                  parking={6}
+                  bedrooms={2}
+                  area={200}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={featureImg2}
-                      className="h-56 w-full object-cover"
-                    />
-                    <Button className="absolute top-3 left-3 text-sm cursor-pointer">
-                      Feature
-                    </Button>
-                  </div>
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">
-                      Comfortable Villa Green
-                    </h3>
-                    <div className="flex items-center justify-between">
-                      <p className="font-semibold text-primary">$5,800</p>
-                      <div className="flex gap-1.5 items-center">
-                        <span>__9</span>
-                        <span>__3</span>
-                        <span>__600</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                <FeatureCard
+                  featureImg={featureImg2}
+                  title={"Comfortable Villa Green"}
+                  rate={"5,800"}
+                  parking={9}
+                  bedrooms={3}
+                  area={600}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={featureImg3}
-                      className="h-56 w-full object-cover"
-                    />
-                    <Button className="absolute top-3 left-3 text-sm cursor-pointer ">
-                      Feature
-                    </Button>
-                  </div>
-
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">
-                      Quality House For Sale
-                    </h3>
-                    <div className="flex items-center justify-between">
-                      <p className="font-semibold text-primary">$2,500</p>
-                      <div className="flex gap-1.5 items-center">
-                        <span>__10</span>
-                        <span>__2</span>
-                        <span>__500</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
+                <FeatureCard
+                  featureImg={featureImg3}
+                  title={"Quality House For Sale"}
+                  rate={"2,500"}
+                  parking={10}
+                  bedrooms={2}
+                  area={500}
+                />
               </SwiperSlide>
             </Swiper>
           </div>

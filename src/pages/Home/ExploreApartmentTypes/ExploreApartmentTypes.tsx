@@ -18,6 +18,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
+import ApartmentTypeCard from "./ApartmentTypeCard";
 
 export default function ExploreApartmentTypes() {
   return (
@@ -56,98 +57,46 @@ export default function ExploreApartmentTypes() {
               className="mySwiper !pb-20 [&_.swiper-pagination-bullet-active]:bg-black "
             >
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={apartmentType1}
-                      className="h-48 w-full object-cover"
-                    />
-                  </div>
-
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">Houses</h3>
-                    <p className="text-sm">7 Properties</p>
-                  </div>
-                </article>
+                <ApartmentTypeCard
+                  apartmentTypeImage={apartmentType1}
+                  apartmentType={"Houses"}
+                  properties={7}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={apartmentType2}
-                      className="h-48 w-full object-cover"
-                    />
-                  </div>
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">Apartments</h3>
-                    <p className="text-sm">3 Properties</p>
-                  </div>
-                </article>
+                <ApartmentTypeCard
+                  apartmentTypeImage={apartmentType2}
+                  apartmentType={"Apartments"}
+                  properties={3}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={apartmentType3}
-                      className="h-48 w-full object-cover"
-                    />
-                  </div>
-
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">Office</h3>
-                    <p className="text-sm">4 Properties</p>
-                  </div>
-                </article>
+                <ApartmentTypeCard
+                  apartmentTypeImage={apartmentType3}
+                  apartmentType={"Office"}
+                  properties={4}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={apartmentType4}
-                      className="h-48 w-full object-cover"
-                    />
-                  </div>
-
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">Townhome</h3>
-                    <p className="text-sm">2 Properties</p>
-                  </div>
-                </article>
+                <ApartmentTypeCard
+                  apartmentTypeImage={apartmentType4}
+                  apartmentType={"Townhome"}
+                  properties={2}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={apartmentType5}
-                      className="h-48 w-full object-cover"
-                    />
-                  </div>
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">Villa</h3>
-                    <p className="text-sm">4 Properties</p>
-                  </div>
-                </article>
+                <ApartmentTypeCard
+                  apartmentTypeImage={apartmentType5}
+                  apartmentType={"Villa"}
+                  properties={4}
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                  <div className="relative">
-                    <img
-                      alt="feature image"
-                      src={apartmentType6}
-                      className="h-48 w-full object-cover"
-                    />
-                  </div>
-
-                  <div className="bg-white p-5">
-                    <h3 className="font-semibold mb-1">Bungalow</h3>
-                    <p className="text-sm">1 Properties</p>
-                  </div>
-                </article>
+                <ApartmentTypeCard
+                  apartmentTypeImage={apartmentType6}
+                  apartmentType={"Bungalow"}
+                  properties={1}
+                />
               </SwiperSlide>
             </Swiper>
           </div>

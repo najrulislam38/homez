@@ -59,7 +59,7 @@ export default function ApartmentTypes() {
                 <img
                   src={cat.image}
                   alt={cat.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-300"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 hover:transition-all duration-300"
                   loading="lazy"
                 />
 

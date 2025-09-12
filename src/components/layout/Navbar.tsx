@@ -149,7 +149,7 @@ export default function Navbar() {
         <div className="flex items-center justify-end gap-5">
           <Link
             to={"#"}
-            className="flex gap-4 justify-center items-center font-medium bg-transparent"
+            className="flex gap-3 justify-center items-center font-medium bg-transparent hover:text-primary hover:transition duration-200"
           >
             <CircleUser />
             <span>Login/Register</span>
