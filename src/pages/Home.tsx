@@ -1,4 +1,5 @@
 import ApartmentTypes from "./Home/ApartmentType/ApartmentTypes";
+import Blog from "./Home/Blog/Blog";
 import BuyOrSell from "./Home/BuyOrSell/BuyOrSell";
 import ExploreApartmentTypes from "./Home/ExploreApartmentTypes/ExploreApartmentTypes";
 import Features from "./Home/Features/Features";
@@ -18,6 +19,7 @@ export default function Home() {
       <BuyOrSell />
       <PeopleLove />
       <OurBestDeals />
+      <Blog />
     </div>
   );
 }

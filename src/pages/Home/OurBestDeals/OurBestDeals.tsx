@@ -52,6 +52,7 @@ export default function OurBestDeals() {
                       alt="feature image"
                       src={deal1}
                       className="h-44 w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
@@ -131,6 +132,7 @@ export default function OurBestDeals() {
                       alt="feature image"
                       src={deal2}
                       className="h-44 w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
@@ -210,6 +212,7 @@ export default function OurBestDeals() {
                       alt="feature image"
                       src={deal3}
                       className="h-44 w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
@@ -291,6 +294,7 @@ export default function OurBestDeals() {
                       alt="image"
                       src={deal4}
                       className="h-44 w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
@@ -374,6 +378,7 @@ export default function OurBestDeals() {
                       alt="image"
                       src={deal4}
                       className="h-44 w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
@@ -455,6 +460,7 @@ export default function OurBestDeals() {
                       alt="feature image"
                       src={deal3}
                       className="h-44 w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
@@ -536,6 +542,7 @@ export default function OurBestDeals() {
                       alt="feature image"
                       src={deal2}
                       className="h-44 w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
@@ -615,6 +622,7 @@ export default function OurBestDeals() {
                       alt="feature image"
                       src={deal1}
                       className="h-44 w-full object-cover"
+                      loading="lazy"
                     />
                   </div>
 
